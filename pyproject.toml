@@ -4,4 +4,15 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    "ipykernel>=7.2.0",
+    "matplotlib>=3.10.9",
+    "qiskit[visualization]>=2.4.1",
+    "qiskit-aer>=0.17.2",
+    "pylatexenc>=2.10",
+]
+
+[tool.uv.workspace]
+members = [
+    "qiskit",
+]
